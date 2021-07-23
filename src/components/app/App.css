@@ -5,6 +5,10 @@
   transition: 0.3s;
 }
 
+body {
+  background-color: rgb(0, 118, 165);
+}
+
 input {
   padding-left: 10px;
   width: 160px;
