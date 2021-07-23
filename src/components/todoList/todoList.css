@@ -1,0 +1,65 @@
+.todoList__task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+  margin-top: 20px;
+  column-gap: 20px;
+}
+
+.todoList {
+  padding-left: 0;
+}
+
+.todoList__btns {
+  display: flex;
+  column-gap: 10px;
+}
+
+.todoList__btn {
+  height: 40px;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  align-items: center;
+  box-shadow: none;
+}
+
+.todoList__name {
+  margin-bottom: 0;
+  font-size: 20px;
+  word-break: break-all;
+}
+.todoList__name.done {
+  text-decoration: line-through;
+  text-decoration-color: black;
+  color: green;
+}
+.todoList__name.important {
+  color: red !important;
+}
+
+.todoList__input {
+  padding: 5px 5px 5px 10px;
+  width: auto;
+  font-size: 20px;
+  height: auto;
+  resize: none;
+}
+
+.todoList__task:hover .todoList__editBtn {
+  display: block;
+  transition: 0.2s;
+}
+
+.todoList__editBtn {
+  color: gray;
+  cursor: pointer;
+  margin-top: 5px;
+  transition: 0.2s;
+  display: none;
+}
+.todoList__editBtn.active {
+  color: black;
+  display: block;
+}

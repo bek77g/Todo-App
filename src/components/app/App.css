@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+input {
+  padding-left: 10px;
+  width: 160px;
+  height: 40px;
+  outline: none;
+}
+
+.app {
+  background-color: rgb(0, 118, 165);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  background-color: rgb(248, 247, 247);
+  border-radius: 5px;
+}

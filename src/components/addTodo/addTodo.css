@@ -1,0 +1,11 @@
+.addTodo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.addTodo__btn {
+  height: 40px;
+  cursor: pointer;
+}
