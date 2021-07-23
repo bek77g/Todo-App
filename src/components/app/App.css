@@ -18,17 +18,17 @@ input {
 
 .app {
   background-color: rgb(0, 118, 165);
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 40%;
 }
 
 .app-container {
+  margin-top: -40%;
   width: 100%;
   max-width: 500px;
   padding: 20px;
   background-color: rgb(248, 247, 247);
   border-radius: 5px;
-  margin-top: 200px;
 }
