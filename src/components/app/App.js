@@ -7,18 +7,14 @@ import AddTodo from "../addTodo/"
 
 
 const App = () => {
-    const [todos, setTodos] = useState([]);
+    const [todos, setTodos] = useState(window.localStorage.getItem('todos') ? JSON.parse(window.localStorage.getItem('todos')) : []);
     const [inputText, setInputText] = useState("");
     const [status, setStatus] = useState('all');
     const [search, setSearch] = useState("");
-    
-    useEffect(() => {
-        setTodos(JSON.parse(localStorage.getItem('todos')))
-    }, []);
+
     useEffect(() => {
         localStorage.setItem('todos', JSON.stringify(todos))
     }, [todos])
-
 
     return (
         <div className="app">
