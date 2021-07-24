@@ -20,7 +20,7 @@ const AddTodo = ({inputText, setInputText, todos, setTodos, status}) => {
     return (
         <form action="" className="addTodo" onSubmit={addTodo}>
             {status === "done" || status === "recent"
-            ? <input type="text" disabled value={inputText} className="addTodo__input" placeholder="You can`t write"/>
+            ? <input type="text" required disabled value={inputText} className="addTodo__input" placeholder="You can`t write"/>
             : <input required className="addTodo__input" type="text" placeholder="What needs to be done" onChange={inputHandler} value={inputText}/>}
             <button className="btn btn-info addTodo__btn" type="submit">Add todo</button>
         </form>
